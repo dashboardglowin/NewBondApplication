@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bond Request Form</title>
+</head>
+<body>
+    <h1>Bond Request Form</h1>
+    <form id="bondRequestForm">
+        <label for="bondType">Select Bond Type:</label>
+        <select id="bondType" name="bondType" required>
+            <option value="" disabled selected>Select a Bond Type</option>
+            <option value="Importer">Importer</option>
+            <option value="Drawback">Drawback</option>
+            <option value="Custodian">Custodian of Bonded Merchandise</option>
+            <option value="Carrier">International Carrier</option>
+            <option value="FTZ">Foreign Trade Zone</option>
+            <option value="AirportSecurity">Airport Security</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Add more fields as needed -->
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
